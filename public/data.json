@@ -1,0 +1,76 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "course_name": "Introduction to C Programming",
+      "course_description": "Learn the fundamentals of C programming language.",
+      "price": 49.99,
+      "credit_hour": 3,
+      "image_link": "https://i.ibb.co/8jH0M31/Rectangle-2-2.png"
+    },
+    {
+      "id": "2",
+      "course_name": "Introduction to Algorithms",
+      "course_description": "Explore the basics of algorithms and problem-solving techniques.",
+      "price": 59.99,
+      "credit_hour": 4,
+      "image_link": "https://i.ibb.co/qm42nh8/Rectangle-2-3.png"
+    },
+    {
+      "id": "3",
+      "course_name": "Introduction to C++ for DSA",
+      "course_description": "Learn C++ programming specifically for data structures and algorithms.",
+      "price": 69.99,
+      "credit_hour": 4,
+      "image_link": "https://i.ibb.co/swgJzM0/Rectangle-2-4.png"
+    },
+    {
+      "id": "4",
+      "course_name": "Basic Data Structures",
+      "course_description": "Master the fundamental data structures used in computer science.",
+      "price": 49.99,
+      "credit_hour": 3,
+      "image_link": "https://i.ibb.co/QCkKgpf/Rectangle-3.png"
+    },
+    {
+      "id": "5",
+      "course_name": "Introduction to OOP Python",
+      "course_description": "Get started with object-oriented programming in Python.",
+      "price": 39.99,
+      "credit_hour": 3,
+      "image_link": "https://i.ibb.co/rxTHFjF/Rectangle-2.png"
+    },
+    {
+      "id": "6",
+      "course_name": "Software Engineering",
+      "course_description": "Learn the principles and practices of software engineering.",
+      "price": 79.99,
+      "credit_hour": 5,
+      "image_link": "https://i.ibb.co/K6nQVvQ/Rectangle-2-5.png"
+    },
+    {
+      "id": "7",
+      "course_name": "AWS, Cloud Computing",
+      "course_description": "Explore cloud computing and Amazon Web Services (AWS).",
+      "price": 89.99,
+      "credit_hour": 5,
+      "image_link": "https://i.ibb.co/3MKMmJj/Rectangle-3-1.png"
+    },
+    {
+      "id": "8",
+      "course_name": "Database (MySQL)",
+      "course_description": "Learn database management with MySQL.",
+      "price": 59.99,
+      "credit_hour": 4,
+      "image_link": "https://i.ibb.co/TMg9DyH/Rectangle-2-1.png"
+    },
+    {
+      "id": "9",
+      "course_name": "Problem Solving Part",
+      "course_description": "Enhance your problem-solving skills with practical exercises.",
+      "price": 29.99,
+      "credit_hour": 2,
+      "image_link": "https://i.ibb.co/K6TyGvP/Rectangle-2-6.png"
+    }
+  ]
+}
