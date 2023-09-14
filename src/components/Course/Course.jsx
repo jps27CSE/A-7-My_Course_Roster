@@ -6,7 +6,6 @@ const Course = ({
   course,
   selectedCourse,
   setSelectedCourse,
-  totalCredit,
   setTotalCredit,
   setRemaining,
 }) => {
@@ -35,7 +34,7 @@ const Course = ({
   };
 
   return (
-    <div className="w-[290px] h-[400px] drop-shadow-2xl rounded-lg  bg-gray-50">
+    <div className="w-[290px] h-[400px] drop-shadow-2xl rounded-lg  bg-[#FFF]">
       <div>
         <img
           className="w-[290px] h-[154px] mt-2 rounded-lg p-2 mx-auto"
@@ -81,7 +80,6 @@ Course.propTypes = {
   course: PropTypes.object,
   selectedCourse: PropTypes.array,
   setSelectedCourse: PropTypes.func,
-  totalCredit: PropTypes.number,
   setTotalCredit: PropTypes.func,
   setRemaining: PropTypes.func,
 };

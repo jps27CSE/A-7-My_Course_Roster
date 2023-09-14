@@ -16,9 +16,9 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-[#F3F3F3]">
       <div>
-        <h1 className="mt-5 text-3xl font-bold text-center">
+        <h1 className="pt-5 text-3xl font-bold text-center">
           Course Registration
         </h1>
       </div>
@@ -27,7 +27,6 @@ function App() {
           courses={courses}
           selectedCourse={selectedCourse}
           setSelectedCourse={setSelectedCourse}
-          totalCredit={totalCredit}
           setTotalCredit={setTotalCredit}
           setRemaining={setRemaining}
         />

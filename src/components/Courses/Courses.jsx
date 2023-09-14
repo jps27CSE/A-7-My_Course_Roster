@@ -5,7 +5,6 @@ const Courses = ({
   courses,
   selectedCourse,
   setSelectedCourse,
-  totalCredit,
   setTotalCredit,
   setRemaining,
 }) => {
@@ -17,7 +16,6 @@ const Courses = ({
           course={course}
           selectedCourse={selectedCourse}
           setSelectedCourse={setSelectedCourse}
-          totalCredit={totalCredit}
           setTotalCredit={setTotalCredit}
           setRemaining={setRemaining}
         />
@@ -32,7 +30,6 @@ Courses.propTypes = {
   courses: PropTypes.array,
   selectedCourse: PropTypes.array,
   setSelectedCourse: PropTypes.func,
-  totalCredit: PropTypes.number,
   setTotalCredit: PropTypes.func,
   setRemaining: PropTypes.func,
 };
