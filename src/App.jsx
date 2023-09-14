@@ -8,7 +8,7 @@ function App() {
           Course Registration
         </h1>
       </div>
-      <div className="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 my-10  flex flex-row justify-between">
+      <div className="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-10 my-10  flex flex-row justify-between">
         <Courses />
         <Cart />
       </div>

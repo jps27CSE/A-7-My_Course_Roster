@@ -3,14 +3,14 @@ import { BsBook } from "react-icons/bs";
 
 const Course = () => {
   return (
-    <div className="w-[315px]  h-[402px] drop-shadow-2xl rounded-lg  bg-slate-200">
+    <div className="w-[280px] h-[402px] drop-shadow-2xl rounded-lg  bg-slate-200">
       <div>
         <img
           className="w-[290px] h-[154px] mt-2 rounded-lg p-2 mx-auto"
           src="https://i.ibb.co/8jH0M31/Rectangle-2-2.png"
           alt=""
         />
-        <h1 className="text-[18px] font-bold text-center">
+        <h1 className="text-[16px] font-bold text-center">
           Introduction to C Programming
         </h1>
 
@@ -38,7 +38,7 @@ const Course = () => {
           </div>
         </div>
       </div>
-      <button className="btn mt-2 w-[280px] h-[40px] bg-[#2F80ED] flex mx-auto text-white text-center hover:bg-slate-500">
+      <button className="btn mt-2 w-[250px] h-[40px] bg-[#2F80ED] flex mx-auto text-white text-center hover:bg-slate-500">
         Select
       </button>
     </div>
