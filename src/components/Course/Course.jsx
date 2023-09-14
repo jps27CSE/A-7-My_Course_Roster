@@ -2,9 +2,38 @@ import { BsCurrencyDollar } from "react-icons/bs";
 import { BsBook } from "react-icons/bs";
 import PropTypes from "prop-types";
 
-const Course = ({ course }) => {
+const Course = ({
+  course,
+  selectedCourse,
+  setSelectedCourse,
+  totalCredit,
+  setTotalCredit,
+  setRemaining,
+}) => {
   const { course_description, image_link, credit_hour, price, course_name } =
     course;
+
+  const handleSelect = (course) => {
+    const isExist = selectedCourse.find((item) => item.id === course.id);
+    let creditValue = course.credit_hour;
+    if (isExist) {
+      alert("already added");
+    } else {
+      selectedCourse.forEach((item) => {
+        creditValue = creditValue + item.credit_hour;
+      });
+      let remainingCredit = 20 - creditValue;
+      if (creditValue > 20) {
+        alert("Limit Cross of Credit Hour");
+      } else {
+        setTotalCredit(creditValue);
+        setRemaining(remainingCredit);
+        const newData = [...selectedCourse, course];
+        setSelectedCourse(newData);
+      }
+    }
+  };
+
   return (
     <div className="w-[290px] h-[400px] drop-shadow-2xl rounded-lg  bg-gray-50">
       <div>
@@ -36,7 +65,10 @@ const Course = ({ course }) => {
           </div>
         </div>
       </div>
-      <button className="btn mt-2 w-[250px] h-[40px] bg-[#2F80ED] flex mx-auto text-white text-center hover:bg-slate-500">
+      <button
+        onClick={() => handleSelect(course)}
+        className="btn mt-2 w-[250px] h-[40px] bg-[#2F80ED] flex mx-auto text-white text-center hover:bg-slate-500"
+      >
         Select
       </button>
     </div>
@@ -47,4 +79,9 @@ export default Course;
 
 Course.propTypes = {
   course: PropTypes.object,
+  selectedCourse: PropTypes.array,
+  setSelectedCourse: PropTypes.func,
+  totalCredit: PropTypes.number,
+  setTotalCredit: PropTypes.func,
+  setRemaining: PropTypes.func,
 };
