@@ -1,6 +1,6 @@
 const Cart = () => {
   return (
-    <div className="w-[290px] h-[355px] mt-10 bg-slate-200  rounded-lg">
+    <div className="w-[290px] h-[355px] mt-14 ml-3 bg-gray-100  rounded-lg">
       <h1 className=" mt-2 text-[#2F80ED] font-bold text-xl p-2">
         Credit Hour Remaining 7 hr
       </h1>

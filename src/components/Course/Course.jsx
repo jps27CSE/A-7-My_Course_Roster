@@ -1,23 +1,21 @@
 import { BsCurrencyDollar } from "react-icons/bs";
 import { BsBook } from "react-icons/bs";
+import PropTypes from "prop-types";
 
-const Course = () => {
+const Course = ({ course }) => {
+  const { course_description, image_link, credit_hour, price, course_name } =
+    course;
   return (
-    <div className="w-[280px] h-[402px] drop-shadow-2xl rounded-lg  bg-slate-200">
+    <div className="w-[290px] h-[400px] drop-shadow-2xl rounded-lg  bg-gray-50">
       <div>
         <img
           className="w-[290px] h-[154px] mt-2 rounded-lg p-2 mx-auto"
-          src="https://i.ibb.co/8jH0M31/Rectangle-2-2.png"
+          src={image_link}
           alt=""
         />
-        <h1 className="text-[16px] font-bold text-center">
-          Introduction to C Programming
-        </h1>
+        <h1 className="text-[16px] font-bold text-center">{course_name}</h1>
 
-        <p className="p-2 text-center text-slate-500">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
-        </p>
+        <p className="p-2 text-center text-slate-500">{course_description}</p>
 
         <div className="flex flex-row mt-3 justify-center">
           <div className=" flex flex-row">
@@ -25,7 +23,7 @@ const Course = () => {
               <BsCurrencyDollar />
             </div>
             <div>
-              <p>Price : 15000</p>
+              <p>Price : {price}</p>
             </div>
           </div>
           <div className="ml-2 flex flex-row">
@@ -33,7 +31,7 @@ const Course = () => {
               <BsBook />
             </div>
             <div className="ml-2">
-              <p>Credit : 1hr</p>
+              <p>Credit : {credit_hour}hr</p>
             </div>
           </div>
         </div>
@@ -46,3 +44,7 @@ const Course = () => {
 };
 
 export default Course;
+
+Course.propTypes = {
+  course: PropTypes.object,
+};
