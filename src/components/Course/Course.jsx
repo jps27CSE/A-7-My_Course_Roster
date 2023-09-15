@@ -35,7 +35,7 @@ const Course = ({
   };
 
   return (
-    <div className="w-[290px] h-[400px] drop-shadow-2xl rounded-lg  bg-[#FFF]">
+    <div className="w-[290px] h-[370px] drop-shadow-2xl rounded-lg  bg-[#FFF]">
       <div>
         <img
           className="w-[290px] h-[154px] mt-2 rounded-lg p-2 mx-auto"
