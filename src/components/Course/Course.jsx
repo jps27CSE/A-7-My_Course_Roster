@@ -23,7 +23,7 @@ const Course = ({
         creditValue = creditValue + item.credit_hour;
       });
       let remainingCredit = 20 - creditValue;
-      if (creditValue > 20) {
+      if (creditValue > 20 && remainingCredit < 0) {
         toast.error("Limit Cross of Credit Hour");
       } else {
         setTotalCredit(creditValue);
