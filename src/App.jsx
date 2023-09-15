@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Cart from "./components/Cart/Cart";
 import Courses from "./components/Courses/Courses";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [courses, setCourses] = useState([]);
   const [remaining, setRemaining] = useState(20);
@@ -17,6 +19,7 @@ function App() {
 
   return (
     <div className="bg-[#F3F3F3]">
+      <ToastContainer />
       <div>
         <h1 className="pt-5 text-3xl font-bold text-center">
           Course Registration

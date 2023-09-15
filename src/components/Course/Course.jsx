@@ -1,6 +1,7 @@
 import { BsCurrencyDollar } from "react-icons/bs";
 import { BsBook } from "react-icons/bs";
 import PropTypes from "prop-types";
+import { toast } from "react-toastify";
 
 const Course = ({
   course,
@@ -16,14 +17,14 @@ const Course = ({
     const isExist = selectedCourse.find((item) => item.id === course.id);
     let creditValue = course.credit_hour;
     if (isExist) {
-      alert("already added");
+      toast.error("Already Added This Course");
     } else {
       selectedCourse.forEach((item) => {
         creditValue = creditValue + item.credit_hour;
       });
       let remainingCredit = 20 - creditValue;
       if (creditValue > 20) {
-        alert("Limit Cross of Credit Hour");
+        toast.error("Limit Cross of Credit Hour");
       } else {
         setTotalCredit(creditValue);
         setRemaining(remainingCredit);
