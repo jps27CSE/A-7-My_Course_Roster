@@ -9,8 +9,6 @@ function App() {
   const [selectedCourse, setSelectedCourse] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
 
-  console.log(selectedCourse);
-
   useEffect(() => {
     fetch("./data.json")
       .then((res) => res.json())
